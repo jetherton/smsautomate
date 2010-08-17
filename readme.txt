@@ -2,7 +2,7 @@
 name: SMS Automate
 website: http://www.ushahidi.com
 description: Automates turning a SMS message into a report
-version: 0.1
+version: 1.0
 requires: 2.0
 tested up to: 2.0
 author: John Etherton
