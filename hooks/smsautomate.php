@@ -34,7 +34,7 @@ class smsautomate {
 	 */
 	public function add()
 	{
-		Event::add('ushahidi_filter.sms_new', array($this, '_parse_sms'));		
+		Event::add('ushahidi_action.message_sms_add', array($this, '_parse_sms'));		
 	}
 
 	/**
@@ -243,6 +243,7 @@ class smsautomate {
 
 		//don't forget to set incident_id in the message
 		Event::$data->incident_id = $incident->id;
+		Event::$data->save();
 		
 	}
 	
